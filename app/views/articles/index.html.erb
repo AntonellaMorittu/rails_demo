@@ -1,12 +1,8 @@
 <% @articles.each do |article| %>
   <p><%= article.title %></p>
   <p><%= article.content %></p>
+  <p>Written by <%= article.author %> at <%= article.created_at %></p>
+  <!-- Written by Thomas at 2018-02-23 -->
 <% end %>
 
-<a href="#">new article</a>
-
-<form action="/articles/" method="post">
-  <input type="text" id="Title" />
-  <input type="text" id="Content" />
-  <button type="submit" value="Create Article" />Create Article</button>
-</form>
+<%= link_to "New Article", new_article_path %>

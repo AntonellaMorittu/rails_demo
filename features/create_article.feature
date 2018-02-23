@@ -5,11 +5,12 @@ Feature: Create articles
 
   Background:
     Given I visit the page
-    When I click "new article" link
+    When I click "New Article" link
 
   Scenario: Successfully create an article [Happy Path]
     When I fill in "Title" with "Learning Rails 5"
     And I fill in "Content" with "Excited about learning a new framework"
+    And I fill in "Author" with "David the gr8"
     And I click "Create Article" button
     Then I should be on "Learning Rails 5" page
     And I should see "Article was successfully created."
@@ -20,5 +21,3 @@ Feature: Create articles
     When I fill in "Content" with "Excited about learning a new framework"
     And I click "Create Article" button
     Then I should see "Title can't be blank"
-
-  # Write another sad path scenario you can think of
