@@ -9,6 +9,7 @@
 </p>
 
 <%= form_with model: Comment.new, local: true do |form| %>
+  <%= form.hidden_field :article_id, value: @article.id %>
   <%= form.label :email %>
   <%= form.email_field :email, id: 'comment_email' %>
   <%= form.label :body, value: 'Comment'  %>
