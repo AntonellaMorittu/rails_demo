@@ -22,3 +22,7 @@ Then("I should be on {string} page") do |title|
   article = Article.find_by_title(title)
   expect(page.current_path).to eq article_path(article)
 end
+
+Then("I should be on the {string} page") do |article_title|
+
+end  
