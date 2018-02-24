@@ -3,7 +3,6 @@ Feature: User can comment on article
   In order to be able to express my opinion
   I would like to be able to comment an article
 
-
   Background:
     Given the following articles exist
       | title                | content                          | author |
