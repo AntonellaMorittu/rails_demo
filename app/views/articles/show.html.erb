@@ -10,8 +10,8 @@
 
 <%= form_with model: Comment.new, local: true do |form| %>
   <%= form.label :email %>
-  <%= form.email_field :email %>
+  <%= form.email_field :email, id: 'comment_email' %>
   <%= form.label :body, value: 'Comment'  %>
-  <%= form.text_field :body %>
+  <%= form.text_field :body, id: 'comment_body_comment' %>
   <%= form.submit %>
 <% end %>
