@@ -13,7 +13,7 @@ Feature: User can comment on article
   Scenario: User adds a comment
     Given I visit the site
     And I click on "Learn Rails 5"
-    And I fill in "Comment" with "This is awesome!"
+    And I fill in "Comment" with "Terrific!"
     And I fill in "Email" with "antonella@craftacademy.se"
     And I click on "Create Comment"
     Then I should be on the "Learn Rails 5" page
