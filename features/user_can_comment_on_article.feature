@@ -17,5 +17,5 @@ Feature: User can comment on article
     And I fill in "Email" with "antonella@craftacademy.se"
     And I click on "Create Comment"
     Then I should be on the "Learn Rails 5" page
-    And I should see "This is awesome!"
+    And I should see "Terrific!"
     And I should see "antonella@craftacademy.se"
