@@ -18,5 +18,11 @@
 
 <% @article.comments.each do |comment| %>
   <p><%= comment.body %></p>
-  <small>Submitted by: <%= comment.email %></small>
+  <small>Submitted by:
+    <% if comment.email != ''%>
+      <%= comment.email %>
+    <% else %>
+      "Anonymous"
+    <% end %>
+  </small>
 <% end %>
