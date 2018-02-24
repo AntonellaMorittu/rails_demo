@@ -8,7 +8,7 @@
   <%= @article.content %>
 </p>
 
-<%= form_with Comment.new, local: true do |form| %>
+<%= form_with model: Comment.new, local: true do |form| %>
   <%= form.label :email %>
   <%= form.email_field :email %>
   <%= form.label :body, value: 'Comment'  %>
