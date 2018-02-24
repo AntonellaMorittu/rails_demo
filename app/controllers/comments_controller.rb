@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def create
-    @comment = Comment.create(comment_params)
+    @comment = Comment.create(comment_params.merge!(article_id: params[:article_id]))
     if @comment.persisted?
       #go back to the page you came from
       flash[:success] = "Create your comment, thank you!"
